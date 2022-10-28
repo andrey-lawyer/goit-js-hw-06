@@ -40,6 +40,7 @@ const event1 = inputEl.addEventListener("change", (event) => {
 });
 
 buttonCreateEl.addEventListener("click", (event) => {
+  destroyBoxes();
   createBoxes(counter);
 });
 buttonDestroyEl.addEventListener("click", (event) => {
