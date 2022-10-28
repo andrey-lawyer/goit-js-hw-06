@@ -32,6 +32,7 @@ const destroyBoxes = () => {
   const divEl = divBoxesEl.querySelectorAll("div");
   console.log(divEl);
   divEl.forEach((el) => el.remove());
+
   // divBoxesEl.childNodes.forEach((el) => el.remove());
 };
 const event1 = inputEl.addEventListener("change", (event) => {
@@ -43,4 +44,5 @@ buttonCreateEl.addEventListener("click", (event) => {
 });
 buttonDestroyEl.addEventListener("click", (event) => {
   destroyBoxes();
+  inputEl.value = 0;
 });

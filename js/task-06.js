@@ -11,7 +11,7 @@ const validationInputEl = document.querySelector("#validation-input");
 //   },
 
 validationInputEl.addEventListener("blur", () => {
-  if (validationInputEl.value.length < validationInputEl.dataset.length) {
+  if (validationInputEl.value.length == validationInputEl.dataset.length) {
     // console.log(validationInputEl.value.length);
     validationInputEl.className = "valid";
   } else {

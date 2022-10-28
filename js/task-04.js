@@ -5,14 +5,14 @@ const valueEl = document.querySelector("#value");
 
 const handleClickAdd = () => {
   counterValue += 1;
-  buttonClickEl[1].textContent = counterValue;
+  // buttonClickEl[1].textContent = counterValue;
   // buttonClickEl[0].textContent = counterValue;
   valueEl.textContent = counterValue;
   console.log("Button was clicked");
 };
 const handleClickSub = () => {
   counterValue -= 1;
-  buttonClickEl[0].textContent = counterValue;
+  // buttonClickEl[0].textContent = counterValue;
   // buttonClickEl[1].textContent = counterValue;
   valueEl.textContent = counterValue;
   console.log("Button was clicked");
